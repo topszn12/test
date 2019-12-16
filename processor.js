@@ -18,8 +18,6 @@ let processor = {
       this.ctx2 = this.c2.getContext("2d");
       this.c3 = document.getElementById("c3");
       this.ctx3 = this.c3.getContext("2d");
-      this.c4 = document.getElementById("c4");
-      this.ctx4 = this.c4.getContext("2d");
       let self = this;
       this.video.addEventListener("play", function() {
           self.width = self.video.videoWidth / 2;
