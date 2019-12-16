@@ -20,8 +20,8 @@ let processor = {
       this.ctx3 = this.c3.getContext("2d");
       let self = this;
       this.video.addEventListener("play", function() {
-          self.width = self.video.videoWidth / 2;
-          self.height = self.video.videoHeight / 2;
+          self.width = self.video.videoWidth / 3;
+          self.height = self.video.videoHeight / 3;
           self.timerCallback();
         }, false);
     },
