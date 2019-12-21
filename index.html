@@ -32,10 +32,22 @@
   <script>
   
 
-var canvas = document.getElementById('c2'),
-    clone = canvas.cloneNode(true); // true means clone all childNodes and all event handlers
-clone.id = "some_id";
-document.body.appendChild(clone);
+  function cloneCanvas(oldCanvas) {
+
+//create a new canvas
+var newCanvas = document.createElementById('c2');
+var context = newCanvas.getContext('2d');
+
+//set dimensions
+newCanvas.width = oldCanvas.width;
+newCanvas.height = oldCanvas.height;
+
+//apply the old canvas to the new one
+context.drawImage(oldCanvas, 0, 0);
+
+//return the new canvas
+return newCanvas;
+}
 
 
   </script>
