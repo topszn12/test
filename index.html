@@ -29,5 +29,15 @@
       <canvas id="c2" width="160" height="96"></canvas>
     </div>
   <script type="text/javascript" src="processor.js"></script>
+  <script>
+  
+
+var div = document.getElementById('c2'),
+    clone = div.cloneNode(true); // true means clone all childNodes and all event handlers
+clone.id = "some_id";
+document.body.appendChild(clone);
+
+
+  </script>
   </body>
 </html>
